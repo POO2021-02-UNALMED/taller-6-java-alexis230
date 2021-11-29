@@ -12,6 +12,9 @@ public class Vehiculo {
 	protected String traccion;
 	protected Fabricante fabricante;
 	public static ArrayList<Vehiculo>contadorV = new ArrayList<Vehiculo>();
+	static Automovil objA;
+	static Camion objB;
+	static Camioneta objC;
 	
 	public Vehiculo() {
 		super();

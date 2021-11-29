@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class Automovil extends Vehiculo{
 	protected int puestos;
 	protected static ArrayList<Automovil>contador = new ArrayList<Automovil>();
+	Vehiculo obj;
 	
 	public Automovil() {
 		super();
