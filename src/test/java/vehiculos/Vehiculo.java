@@ -19,6 +19,16 @@ public class Vehiculo {
 	public Vehiculo() {
 		super();
 	}
+	
+	public static int getCantidadVehiculos() {
+		return contadorV.size();
+	}
+	
+	public static String vehiculosPorTipo() {
+		return "Automoviles: "+Automovil.getContador().size()+"\n"
+		+"Camionetas: "+Camion.getContador().size()+"\n"
+		+"Camiones: "+Camioneta.getContador().size();	
+	}
 
 	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso,
 			String traccion, Fabricante fabricante) {
@@ -95,15 +105,5 @@ public class Vehiculo {
 	
 	public void setFabricante(Fabricante fabricante) {
 		this.fabricante = fabricante;
-	}
-	
-	public static int getCantidadVehiculos() {
-		return contadorV.size();
-	}
-	
-	public static String vehiculosPorTipo() {
-		return "Automoviles: "+Automovil.getContador().size()+"\n"
-		+"Camionetas: "+Camion.getContador().size()+"\n"
-		+"Camiones: "+Camioneta.getContador().size();	
 	}
 }
