@@ -97,4 +97,10 @@ public class Vehiculo {
 	public static int getCantidadVehiculos() {
 		return contadorV.size();
 	}
+	
+	public static String vehiculosPorTipo() {
+		return "Automoviles: "+Automovil.getContador().size()+"\n"
+		+"Camionetas: "+Camion.getContador().size()+"\n"
+		+"Camiones: "+Camioneta.getContador().size();	
+	}
 }
